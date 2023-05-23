@@ -1,0 +1,135 @@
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~ (master)
+$ cd
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~ (master)
+$ cd Desktop/
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop (master)
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop (master)
+$ https://github.com/Tushark-github/WAD-practical.git~
+bash: https://github.com/Tushark-github/WAD-practical.git~: No such file or directory
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop (master)
+$ https://github.com/Tushark-github/WAD-practical.git
+bash: https://github.com/Tushark-github/WAD-practical.git: No such file or directory
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop (master)
+$ git clone https://github.com/Tushark-github/WAD-practical.git
+Cloning into 'WAD-practical'...
+warning: You appear to have cloned an empty repository.
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop (master)
+$ cd WAD-practical/
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop/WAD-practical (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Tree/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop/WAD-practical (main)
+$ git add .
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop/WAD-practical (main)
+$ git commit -m "write some hint"
+[main (root-commit) b53f5d9] write some hint
+ 13 files changed, 362 insertions(+)
+ create mode 100644 Tree/.idea/.gitignore
+ create mode 100644 Tree/.idea/Tree.iml
+ create mode 100644 Tree/.idea/misc.xml
+ create mode 100644 Tree/.idea/modules.xml
+ create mode 100644 Tree/.idea/uiDesigner.xml
+ create mode 100644 Tree/Loops.java
+ create mode 100644 Tree/TreeNode.java
+ create mode 100644 Tree/main.java
+ create mode 100644 Tree/out/production/Tree/.idea/.gitignore
+ create mode 100644 Tree/out/production/Tree/.idea/Tree.iml
+ create mode 100644 Tree/out/production/Tree/.idea/misc.xml
+ create mode 100644 Tree/out/production/Tree/.idea/modules.xml
+ create mode 100644 Tree/out/production/Tree/.idea/uiDesigner.xml
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop/WAD-practical (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Tushark-github/WAD-practical.git'
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop/WAD-practical (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Tushark-github/WAD-practical.git'
+
+Tushar PC@DESKTOP-NQF2K76 MINGW64 ~/Desktop/WAD-practical (main)
+$ git remote add origin https://github.com/Tushark-github/WAD-practical.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (15/15), 2.77 KiB | 472.00 KiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Tushark-github/WAD-practical.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
